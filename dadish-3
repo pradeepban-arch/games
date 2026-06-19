@@ -15,7 +15,7 @@
             var meta = document.getElementById ("viewport");
             meta.setAttribute ('canvas', 'width=device-width, initial-scale=' + (2 / window.devicePixelRatio) + ', user-scalable=no');
         }
-    <\/script>
+    </script>
 
         <!-- Set the title bar of the page -->
         <title>Dadish 3</title>
@@ -129,7 +129,7 @@
         </div>
 
         <!-- Run the game code -->
-        <script type="text/javascript" src="dadish3/Dadish 3 Poki.js"><\/script>
+        <script type="text/javascript" src="dadish3/Dadish 3 Poki.js"></script>
         
         <!-- Poki start -->
         <script>
@@ -190,7 +190,7 @@
               //PokiSDK.setDebug(true); <-- Uncomment this line for debugging
             });
           })();
-        <\/script>
+        </script>
 <div id="sticky-promo-banner" class="corner-banner">
   <a href="https://sites.google.com/view/unbanned-cave" target="_blank" id="banner-link">Click for more games in Unbanned Cave!</a>
   <button id="close-banner-btn" onclick="dismissBanner()">×</button>
@@ -247,7 +247,7 @@ function dismissBanner() {
 window.onload = function() {
   document.getElementById('close-banner-btn').style.display = 'inline-block';
 };
-<\/script>
+</script>
         <!-- Poki end -->
 <!-- Link element positioned in the bottom right -->
 <style>
@@ -286,7 +286,7 @@ window.onload = function() {
         toggleLink();
         setInterval(toggleLink, 20000);
     })();
-<\/script>
+</script>
 
         
     </body>

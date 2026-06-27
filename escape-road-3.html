@@ -8,10 +8,9 @@
 
 <html lang="en-us">
 <head>
-	<base href="http://cdn.jsdelivr.net/gh/pradeepban-arch/escape-road-3@main/">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="game.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pradeepban-arch/escape-road-3@main/game.css">
 	<meta name="robots" content="noindex, nofollow">
 	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap" rel="stylesheet">
 	<title>Escape Road 3</title>
@@ -28,7 +27,7 @@
 			z-index: 0;
 			position: absolute;
 			background-size: cover;
-			background-image: url("loading.png")
+			background-image: url("https://cdn.jsdelivr.net/gh/pradeepban-arch/escape-road-3@main/loading.png")
 		}
 	</style> 
 </head>
@@ -49,7 +48,7 @@
 				<div class="jss7 jss9 jss20 jss3">
 					<div class="jss125">
 						<div class="jss123">
-						 <img src="logo.png">
+						 <img src="https://cdn.jsdelivr.net/gh/pradeepban-arch/escape-road-3@main/logo.png">
 						</div>
 					</div>
 				</div>
@@ -138,15 +137,15 @@
     }
     (async () => {
       const [dataUrl, wasmUrl] = await Promise.all([
-        mergeFiles(getParts("Build/escape-road-3-v26041006.data", 1, 7), "escape-road-3-v26041006.data"),
-        mergeFiles(getParts("Build/escape-road-3-v26041006.wasm", 1, 3), "escape-road-3-v26041006.wasm")
+        mergeFiles(getParts("https://cdn.jsdelivr.net/gh/pradeepban-arch/escape-road-3@main/Build/escape-road-3-v26041006.data", 1, 7), "escape-road-3-v26041006.data"),
+        mergeFiles(getParts("https://cdn.jsdelivr.net/gh/pradeepban-arch/escape-road-3@main/Build/escape-road-3-v26041006.wasm", 1, 3), "escape-road-3-v26041006.wasm")
       ]);
 
 		var buildUrl = "Build";
-		var loaderUrl = buildUrl + "/escape-road-3-v26041006.loader.js";
+		var loaderUrl = buildUrl + "https://cdn.jsdelivr.net/gh/pradeepban-arch/escape-road-3@main/Build/escape-road-3-v26041006.loader.js";
 		var config = {
 			dataUrl: dataUrl,
-			frameworkUrl: buildUrl + "/escape-road-3-v26041006.framework.js",
+			frameworkUrl: buildUrl + "https://cdn.jsdelivr.net/gh/pradeepban-arch/escape-road-3@main/Build/escape-road-3-v26041006.framework.js",
 			codeUrl: wasmUrl,
 			streamingAssetsUrl: "StreamingAssets",
 			companyName: "ozgames.io",

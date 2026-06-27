@@ -1,0 +1,98 @@
+<html><head><title>classroom.google.com</title><link rel="icon" href="https://ssl.gstatic.com/classroom/favicon.png"><style>body,html{margin:0;padding:0;height:100%;width:100%;overflow:hidden;}iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;}</style></head><body><iframe src="https://script.google.com/macros/s/AKfycbxWngUzKXgiuLw8NOMvvPpH22STOer33RrFCMx6aBgVObUJ7ArfNZoOe4m75_ahoTni8Q/exec" allowfullscreen=""></iframe>
+<div id="sticky-promo-banner" class="corner-banner">
+  <a href="https://sites.google.com/view/unbanned-cave" target="_blank" id="banner-link">Click for more games in Unbanned Cave!</a>
+  <button id="close-banner-btn" onclick="dismissBanner()">×</button>
+</div>
+<style>
+.corner-banner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999; /* Ensures it sits above all other content */
+  background-color: #ffcc00;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom-left-radius: 8px;
+  box-shadow: -2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.corner-banner a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#close-banner-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1;
+  display: none; /* Hidden by default until JS triggers it */
+}
+</style>
+<script>
+// Function to hide the banner and start the 60-second timer
+function dismissBanner() {
+  const banner = document.getElementById('sticky-promo-banner');
+  const closeBtn = document.getElementById('close-banner-btn');
+
+  // Hide the banner visually so it no longer overlays the content
+  banner.style.visibility = 'hidden'; 
+
+  // Wait exactly 60 seconds (60000 milliseconds)
+  setTimeout(function() {
+    // Show the banner and the "x" button again
+    banner.style.visibility = 'visible';
+    closeBtn.style.display = 'inline-block';
+  }, 60000); 
+}
+
+// Ensure the "X" button is visible when the page first loads
+window.onload = function() {
+  document.getElementById('close-banner-btn').style.display = 'inline-block';
+};
+</script>
+<!-- Link element positioned in the bottom right -->
+<style>
+    #timed-hyperlink {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        display: none; /* Initially hidden */
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-family: sans-serif;
+    }
+</style>
+
+<a href="https://sites.google.com/view/unbanned-cave/feedback-fs" id="timed-hyperlink">Click this to suggest more games!</a>
+
+<script>
+    (function() {
+        const link = document.getElementById('timed-hyperlink');
+        
+        function toggleLink() {
+            // Show the link immediately
+            link.style.display = 'block';
+            
+            // Hide it after exactly 7 seconds
+            setTimeout(() => {
+                link.style.display = 'none';
+            }, 7000);
+        }
+
+        // Run the cycle once immediately, then every 20 seconds
+        toggleLink();
+        setInterval(toggleLink, 20000);
+    })();
+</script>
+
+</body></html>
